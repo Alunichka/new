@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+	<script src="js/jquery.1.7.1.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+	<!-- sxSlider -->
+	<script src="components/bxslider/dist/jquery.bxslider.min.js"></script>
+	<link href="components/bxslider/dist/jquery.bxslider.css" rel="stylesheet" />
+
+<title>реквізити</title>
+
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+</script>
+<!-- Двухуровневое меню END-->
+
+
+
+</head>
+
+<body>
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+		<div class="main_title">
+			<a class="first_title" href="programms.html"><h4 class="left">допомогти</h4></a>
+			<h5 class="left">реквізити</h5>
+			<a href="#" class="main_donate right">пожертвувати</a>
+		</div>
+		
+		<h1 class="page_title">Реквізити для перерахунку коштів на розрахунковий рахунок</h1>
+		
+		<div class="requisities_wrap">
+			<img class="uah left" src="images/uah.png" alt="">
+			<div class="requisities_text">
+				<p>В гривнях (UAH)</p>
+				<p>Отримувач: <span>Благодійний Фонд «Сім'я кожному»</span></p>
+				<p>Р/р: <span>00000000000000 в ПАТ КБ ПРИВАТБАНК</span></p>
+				<p>МФО: <span>000000</span></p>
+				<p>ЄДРПОУ: <span>00000000</span></p>
+				<p>Призначення платежу: <span>«Благодійний внесок»</span></p>
+			</div>
+		</div>
+
+		<div class="quote_rami">
+			<h3>Правильна благодійність - основа процвітання.</h3>
+			<q>Благодійність в енергії благості здійснюється без бажання отримати щось взамін, з почуття обов'язку, своєчасно, в належному місці і достойній особистості. Дуже важливо знати правильні способи здійснення благодійності. <span>Найкращий спосіб - направити благодійність на розповсюдження істинних знань та Божественної безумовної любові. </span>Світська людина, у якої домінує енергія благості, регулярно жертвує не менше 10% свого прибутку.</q>
+			<p class="right">автор: психолог Рамі Блект</p>
+		</div>
+
+	 	<div><a class="one_of_us" href="#">будь одним iз нас</a></div>
+
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>

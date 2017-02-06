@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+<title>Програми</title>
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+  </script>
+<!-- Двухуровневое меню END-->
+
+</head>
+
+<body>
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+		<div class="main_title">
+			<a class="first_title" href="news.html"><h4 class="left">новини</h4></a>
+			<h5 class="left">анонси</h5>
+			<a href="#" class="main_donate right">пожертвувати</a>
+		</div>
+
+		<h1 class="page_title">Анонси заходів</h1>
+		<div id="announce_wrap">
+			<div class="news_item announce_item left">
+				<a href="#" class="news_img announce_img left"><img src="images/news/new_1.jpg" alt=""></a>
+				<div class="news_short_text announce_short_text">
+					<p class="data_news"><span class="right">15.05.2016 р.</span></p>
+					<h2 class="news_title">Запошуємо на свято сім’ї і дитинства.</h2>
+					<p class="news_item_text announce_item_text">28 травня за підтримки БФ "Сім'я кожному" пройде святковий захід, присвячений Міжнародному дню сім’ї та Дню захисту дітей – «Свято сім’ї і дитинства».</p>
+					<a class="news_item_more right" href="#">Читати більше...</a>
+				</div>
+			</div>
+			<div class="news_item announce_item left">
+				<a href="#" class="news_img announce_img left"><img src="images/news/new_1.jpg" alt=""></a>
+				<div class="news_short_text announce_short_text">
+					<p class="data_news"><span class="right">05.06.2016 р.</span></p>
+					<h2 class="news_title">Запошуємо на свято сім’ї і дитинства.</h2>
+					<p class="news_item_text announce_item_text">28 травня за підтримки БФ "Сім'я кожному" пройде святковий захід, присвячений Міжнародному дню сім’ї та Дню захисту дітей – «Свято сім’ї і дитинства».</p>
+					<a class="news_item_more right" href="#">Читати більше...</a>
+				</div>
+			</div>
+			<div class="news_item announce_item left">
+				<a href="#" class="news_img announce_img left"><img src="images/news/new_1.jpg" alt=""></a>
+				<div class="news_short_text announce_short_text">
+					<p class="data_news"><span class="right">05.06.2016 р.</span></p>
+					<h2 class="news_title">Запошуємо на свято сім’ї і дитинства.</h2>
+					<p class="news_item_text announce_item_text">28 травня за підтримки БФ "Сім'я кожному" пройде святковий захід, присвячений Міжнародному дню сім’ї та Дню захисту дітей – «Свято сім’ї і дитинства».</p>
+					<a class="news_item_more right" href="#">Читати більше...</a>
+				</div>
+			</div>
+			<div class="news_item announce_item left">
+				<a href="#" class="news_img announce_img left"><img src="images/news/new_1.jpg" alt=""></a>
+				<div class="news_short_text announce_short_text">
+					<p class="data_news"><span class="right">05.06.2016 р.</span></p>
+					<h2 class="news_title">Запошуємо на свято сім’ї і дитинства.</h2>
+					<p class="news_item_text announce_item_text">28 травня за підтримки БФ "Сім'я кожному" пройде святковий захід, присвячений Міжнародному дню сім’ї та Дню захисту дітей – «Свято сім’ї і дитинства».</p>
+					<a class="news_item_more right" href="#">Читати більше...</a>
+				</div>
+			</div>
+			<div class="news_item announce_item left">
+				<a href="#" class="news_img announce_img left"><img src="images/news/new_1.jpg" alt=""></a>
+				<div class="news_short_text announce_short_text">
+					<p class="data_news"><span class="right">05.06.2016 р.</span></p>
+					<h2 class="news_title">Запошуємо на свято сім’ї і дитинства.</h2>
+					<p class="news_item_text announce_item_text">28 травня за підтримки БФ "Сім'я кожному" пройде святковий захід, присвячений Міжнародному дню сім’ї та Дню захисту дітей – «Свято сім’ї і дитинства».</p>
+					<a class="news_item_more right" href="#">Читати більше...</a>
+				</div>
+			</div>
+		</div>
+
+		<div><a class="one_of_us" href="#">будь одним iз нас</a></div>
+	 	
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>

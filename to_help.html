@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+<title>Допомогти</title>
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+  </script>
+<!-- Двухуровневое меню END-->
+
+</head>
+
+<body>
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+		<div class="main_title">
+			<h4 class="left">допомогти</h4>
+			<a href="#" class="main_donate right">пожертвувати</a>
+		</div>
+		
+		<h1 class="page_title">Як ми можемо допомогти?</h1>
+		<div id="help_first_line">
+			<a href="donate_online.html">
+				<p>Пожертвувати кошти online</p>
+				<img src="images/to_help/charity_1.jpg" alt="">	
+			</a>
+			<a href="requisites.html">
+				<img src="images/to_help/charity_2.jpg" alt="">
+				<p>Відправити кошти на розрахунковий рахунок</p>
+			</a>
+			<a href="they_need.html">
+				<img src="images/to_help/charity_3.jpg" alt="">
+				<p>Переглянути, яка допомога необхідна</p>
+			</a>
+			<a href="volunteer.html">
+				<img src="images/to_help/charity_4.jpg" alt="">
+				<p>Стати волонтером: заповнити форму</p>
+			</a>
+		</div>
+
+		<h2 class="page_title_2">Благодійна допомога може бути:</h2>
+
+		<!-- Вкладки -->
+		<div id="list_help">
+  			<div><span>Духовна</span>Якщо Ви віруюча людина, можете допомогти тим, хто потребує, йти до Бога, що є найважливішою втіхою в будь-яких життєвих обставинах, а також молитвою. Ви можете стати другом, допомагаючи людині стати сильнішою, ніж вона є зараз.</div>
+  			<div><span>Інтелектуальна</span>На цьому рівні у нас теж багато інстументів: ми можемо допомогти у розвитку, навчити чогось, розширити свідомість, проводити благодійні заняття чи тренінги в тій галузі, в якій маємо досвід, надавати безкоштовну інформацію, допомогти правильно сформулювати цілі та шляхи їх досягнення. </div>
+ 			<div><span>Матеріальна</span>Фінансова допомога може змінити життя будь якої людини, яка потрапила в тяжкі життєві обставини, включаючи спасіння життя. Фінансова підтримка необхідна у всьому і на всіх рівнях, як на лікування, операції продукти, одяг, житло, будівництво храмів, тварин, так і на розвиток достойних проектів, бізнесу та багато іншого.</div>
+ 			<div><span>Душевна</span>Потрібно лише наше щире відкрите серце, наші теплі почуття добра. Тоді воно, це добро, саме приведе нас саме до тієї старенької бабусі, якій так потрібна просто ласкава розмова та увага, до інваліда, який, можливо, уже і забув, що в грудях буває таке приємне відчуття любові до життя, але згадав завдяки Вашій небайдужості. На цьому рівні ми допомагаємо, пробуджуючи потрібні емоції. </div>
+ 			<div><span>Психологічна</span>Часто буває, що людині необхідна психологічна допомога і тут важливе місце займає просто уважно чуттєво вислухати її, знайти ті слова, які піднімуть самооцінку, змотивують змінити життєву ситуацію.</div>
+ 			<div><span>Фізична</span>Вид допомоги полягає в фізичній праці, яку людина не в змозі зробити сама.</div>
+		</div>
+		<!-- Вкладки END -->
+
+		<!-- Видео -->
+		<h2 class="page_title_2">Соціальні відео про добро, щедрість, тепло душі</h2>
+		<div id="help_video_wrap">
+			<div class="help_video left loading_position">
+				<!-- <img class="loading" src="images/spinner.gif" alt=""> -->
+				<div class="video"><iframe width="480" height="282" src="https://www.youtube.com/embed/1p2OLvTxGSY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+			</div>
+			<div class="help_video left loading_position">
+				<div class="video"><iframe width="480" height="282" src="https://www.youtube.com/embed/1N-7HZnlyNE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+				<!-- <img class="loading" src="images/spinner.gif" alt="">	 -->
+			</div>
+			<div class="help_video left loading_position">
+				<div class="video"><iframe width="480" height="282" src="https://www.youtube.com/embed/bovyYO858YU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+				<!-- <img class="loading" src="images/spinner.gif" alt="">	 -->
+			</div>
+			<div class="help_video left loading_position">
+				<div class="video"><iframe width="480" height="282" src="https://www.youtube.com/embed/xj7lpkhsXH4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+				<!-- <img class="loading" src="images/spinner.gif" alt="">	 -->
+			</div>
+		</div>
+		<!-- Видео END -->
+
+		<div><a class="one_of_us" href="#">будь одним iз нас</a></div>
+	 	
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>

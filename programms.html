@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+<title>Програми</title>
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+  </script>
+<!-- Двухуровневое меню END-->
+
+</head>
+
+<body>
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+		<div class="main_title">
+			<h4 class="left">програми фонду</h4>
+			<a href="#" class="main_donate right">пожертвувати</a>
+		</div>
+		<div id="programms_wrap" class="clearfix">
+			<div class="programms_item left">
+				<a class="programms_title_1" href="age.html"><h2 >Старість в радість</h2></a>
+				<a href="age.html">
+					<div class="prog_more_position">
+						<img src="images/programms/programm_1.jpg" alt="">
+						<span class="more_pic"></span>
+					</div>
+				</a>
+				<p class="prorgamms_descr">Благодійна програма «Старість в радість» триває з 2012 року, в рамках якої наша команда надає матеріальну та психологічну допомогу літнім людям, інвалідам та всім, хто потребує турботи і опіки. Є традиційні місця, в які ми щороку приїжджаємо обов'язково. На протязі кількох років ми намагаємося ділитися теплом і радістю з тими, хто в цьому має особливу потребу. Робити невеликі приємні подаруночки, які допомагають виконати їх добрі мрії та подарувати часточку нашого сердечного тепла і сімейної радості. </p>
+
+			</div>
+			<div class="programms_item left">
+				<a class="programms_title_2" href="family.html"><h2 >Сім'я і дитинство</h2></a>
+				<a href="family.html">
+					<div class="prog_more_position">
+						<img src="images/programms/programm_2.jpg" alt="">
+						<span class="more_pic"></span>
+					</div>
+				</a>
+				<p class="prorgamms_descr">В час, коли сімейні цінності мають далеко не перший пріоритет для все більшої частини суспільства, так гостро стоїть питання про зміцнення інституту сім'ї, про усвідомлення необхідності плекати сімейні цінності посеред усіх інших. На це і націлена наша програма. Серед основних її завдань також матеріальна, інформаційна, духовна допомога багатодітним сім'ям, сиротам, дітям-інвалідам, тяжко хворим дітям. Організовуємо благодійні свята та заходи для дітей.</p>
+			</div>
+			<div class="programms_item left">
+				<a class="programms_title_3" href="ato.html"><h2 >Переселенці та воїни АТО</h2></a>
+				<a href="ato.html">
+					<div class="prog_more_position">
+						<img src="images/programms/programm_3.jpg" alt="">
+						<span class="more_pic"></span>
+					</div>
+				</a>
+				<p class="prorgamms_descr">Метою программи є моральна, духовна, психологічна, матеріальна підтримка переселенців із зони проведення АТО, надання необхідної інформації, допомога в юридичних питаннях, складних життєвих обставинах. Ми прагнемо щоб сім'ї, яким довелось змінити своє життя, не відчували себе в пастці обставин. Також важливим напрямком є допомога воїнам АТО, які потребують її, перебуваючи як на самій війні, так і повертаючись у вирій звичайного повсякдення.</p>
+			</div>
+		</div>
+
+		<div><a class="one_of_us" href="#">будь одним iз нас</a></div>
+	 	
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>

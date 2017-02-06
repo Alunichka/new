@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+<title>Про фонд</title>
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+  </script>
+<!-- Двухуровневое меню END-->
+</head>
+
+<body>
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+
+	 	<div id="content_top">
+	 		<!-- Слайды -->
+			<div class="body_slides left">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		 	<!-- Слайды END -->
+
+		 	<div id="near_slides" class="right">
+		 		<div class="part">
+		 			<a class="donate" href="#">пожертвувати</a>
+		 		</div>
+		 		<div class="part">
+		 			<a class="volunteer" href="#">стати волонтером</a>
+		 		</div>
+
+		 		<p class="social_title">Слідкуйте за нами:</p>
+		 		<div class="social">
+		 			<a id="fb" href="#">&nbsp;</a>
+		 			<a id="yt" href="#">&nbsp;</a>
+		 			<a id="vk" href="#">&nbsp;</a>
+		 			<a id="g" href="#">&nbsp;</a>
+		 		</div>
+		 		<a class="hands" href="they_need.html"><img src="images/hands.png" alt=""></a>
+		 	</div>
+	 	</div>
+		<!-- content_top END -->
+
+		<div class="text">
+			<h1>Благодійний фонд «Сім'я кожному»</h1>
+			<img class="right" src="images/charity.jpg" alt="">
+			<p class="content_text">- це благодійна організація, діяльність якої спрямована на зміцнення сімейних цінностей в суспільстві і розвиток здорових сімейних відносин; зміцнення інституту сім'ї, підвищення престижу і ролі родини, усвідомлення сенсу шлюбу, захист життя ненароджених, дитинства, материнства і батьківства, профілактика соціального сирітства. </p>
+    		<p class="content_text">Наш фонд реалізує проекти, які роблять суттєвий внесок в духовно-моральне наповнення сім'ї, піднімають самосвідомість подружжя, сприяють зміцненню сімейних цінностей. Ми прагнемо, щоб кожна дитина мала сім'ю, а сім'я дитину. </p>
+   			<p class="content_text">Ряд проектів фонду спрямовані на підтримку соціально незахищених верств населення: багатодітних та малозабезпечених сімей, дітей-інвалідів, літніх і самотніх людей.</p>
+		</div>
+
+		<!-- Наша команда -->
+		<div id="team">
+			<h2>Наша команда</h2>
+			<p class="content_text">Команда нашої організації - це одна велика дружна сім'я психологів, педагогів, лікарів, юристів, інших профільних фахівців, активістів і волонтерів готових нести радість і щастя кожному, хто його потребує.</p>
+			
+			<div class="team_wrap">
+				<div class="team_item item_1">
+					<div class="team_img"><img src="images/team/team_item_1.jpg" alt=""></div>
+					<p class="team_title">Іван Ружицький</p>
+					<p class="team_descr">голова фонду</p>
+					<div class="team_social">
+						<a id="vk" href="">&nbsp;</a>
+						<a id="goo" href="">&nbsp;</a>
+					</div>
+				</div>
+				<div class="team_item item_2">
+					<div class="team_img"><img src="images/team/team_item_1.jpg" alt=""></div>
+					<p class="team_title">Іван Ружицький</p>
+					<p class="team_descr">голова фонду</p>
+					<div class="team_social">
+						<a id="vk" href="">&nbsp;</a>
+						<a id="goo" href="">&nbsp;</a>
+					</div>
+				</div>
+				<div class="team_item item_3">
+					<div class="team_img"><img src="images/team/team_item_1.jpg" alt=""></div>
+					<p class="team_title">Іван Ружицький</p>
+					<p class="team_descr">голова фонду</p>
+					<div class="team_social">
+						<a id="vk" href="">&nbsp;</a>
+						<a id="goo" href="">&nbsp;</a>
+					</div>
+				</div>
+				<div class="team_item item_4">
+					<div class="team_img"><img src="images/team/team_item_1.jpg" alt=""></div>
+					<p class="team_title">Іван Ружицький</p>
+					<p class="team_descr">голова фонду</p>
+					<div class="team_social">
+						<a id="vk" href="">&nbsp;</a>
+						<a id="goo" href="">&nbsp;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Наша команда END -->
+
+		<!-- Вони отримали допомогу -->
+		<div id="got_help">
+			<h2>Вони отримали допомогу</h2>
+			<div id="got_help_wrap">
+				<div class="got_help_item">
+					<div class="img_quote">
+						<img src="images/got_help/help_1.jpg" alt="">
+						<div class="help_quote">
+							<div class="quote_position">
+								<q>У меня такая радость, словно нашла миллион, хотя нет - это гораздо дороже!</q>
+							</div>
+						</div>
+					</div>
+					<div class="got_help_text">
+						<p class="help_name">Бабуся Ніна</p>
+						<p class="help_what">Допомога: <span>стул-туалет</span></p>
+						<p class="price">Вартість: <span>5000 грн.</span> </p>
+					</div>
+				</div>
+			
+				<div class="got_help_item">
+					<div class="img_quote">
+						<img src="images/got_help/help_1.jpg" alt="">
+						<div class="help_quote">
+							<div class="quote_position">
+								<q>У меня такая радость, словно нашла миллион, хотя нет - это гораздо дороже!</q>
+							</div>
+						</div>
+					</div>
+					<div class="got_help_text">
+						<p class="help_name">Бабуся Ніна</p>
+						<p class="help_what">Допомога: <span>стул-туалет</span></p>
+						<p class="price">Вартість: <span>5000 грн.</span> </p>
+					</div>
+				</div>
+				<div class="got_help_item">
+					<div class="img_quote">
+						<img src="images/got_help/help_1.jpg" alt="">
+						<div class="help_quote">
+							<div class="quote_position">
+								<q>У меня такая радость, словно нашла миллион, хотя нет - это гораздо дороже!</q>
+							</div>
+						</div>
+					</div>
+					<div class="got_help_text">
+						<p class="help_name">Бабуся Ніна</p>
+						<p class="help_what">Допомога: <span>стул-туалет</span></p>
+						<p class="price">Вартість: <span>5000 грн.</span> </p>
+					</div>
+				</div>
+				<div class="got_help_item">
+					<div class="img_quote">
+						<img src="images/got_help/help_1.jpg" alt="">
+						<div class="help_quote">
+							<div class="quote_position">
+								<q>У меня такая радость, словно нашла миллион, хотя нет - это гораздо дороже!</q>
+							</div>
+						</div>
+					</div>					
+					<div class="got_help_text">
+						<p class="help_name">Бабуся Ніна</p>
+						<p class="help_what">Допомога: <span>стул-туалет</span></p>
+						<p class="price">Вартість: <span>5000 грн.</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Вони отримали допомогу END -->
+
+		<!-- Партнери -->
+		<div id="partners">
+			<h2>Наші партнери</h2>
+			<div id="partners_wrap">
+				<div class="partners_item">
+					<a href="https://privatbank.ua/"><img class="partners_img" src="images/partners/partner_1.jpg" alt=""></a>
+					<p class="partners_title">Приват банк</p>
+					<a href="https://privatbank.ua/" class="partners_web">сайт компании</a>
+				</div>
+				<div class="partners_item">
+					<a href="https://privatbank.ua/"><img class="partners_img" src="images/partners/partner_1.jpg" alt=""></a>
+					<p class="partners_title">Приват банк</p>
+					<a href="https://privatbank.ua/" class="partners_web">сайт компании</a>
+				</div>
+				<div class="partners_item">
+					<a href="https://privatbank.ua/"><img class="partners_img" src="images/partners/partner_1.jpg" alt=""></a>
+					<p class="partners_title">Приват банк</p>
+					<a href="https://privatbank.ua/" class="partners_web">сайт компании</a>
+				</div>
+				<div class="partners_item">
+					<a href="https://privatbank.ua/"><img class="partners_img" src="images/partners/partner_1.jpg" alt=""></a>
+					<p class="partners_title">Приват банк</p>
+					<a href="https://privatbank.ua/" class="partners_web">сайт компании</a>
+				</div>
+				<div class="partners_item">
+					<a href="https://privatbank.ua/"><img class="partners_img" src="images/partners/partner_1.jpg" alt=""></a>
+					<p class="partners_title">Приват банк</p>
+					<a href="https://privatbank.ua/" class="partners_web">сайт компании</a>
+				</div>
+				<div class="partners_item">
+					<a href="https://privatbank.ua/"><img class="partners_img" src="images/partners/partner_1.jpg" alt=""></a>
+					<p class="partners_title">Приват банк</p>
+					<a href="https://privatbank.ua/" class="partners_web">сайт компании</a>
+				</div>
+			</div>
+		</div>
+		<!-- Партнери END -->
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>

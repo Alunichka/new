@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+
+	<script src="js/jquery.1.7.1.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+
+<title>контакти</title>
+
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+</script>
+<!-- Двухуровневое меню END-->
+
+
+</head>
+
+<body>
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+		<div class="main_title">
+			<a class="first_title" href="programms.html"><h4 class="left">контакти</h4></a>
+			<a href="#" class="main_donate right">пожертвувати</a>
+		</div>
+		
+		<h1 class="page_title">Контакти</h1>
+		
+		<div id="contacts_wrap">	
+			<ul id="contacts" class="left">
+				<li>01103, м. Київ</li>
+				<li>вул. Остапа Вишні, 7, офіс 52</li>
+				<li>e-mail: <a href="mailto:family-fund@ukr.net">family-fund@ukr.net</a></li>
+				<li>тел. +38 (066) 028-57-78</li>
+			</ul>
+
+			<div id="write_us">
+				<p>Напишіть нам, якщо у Вас є питання чи пропозиції: </p>
+				<form action="" id="letter">
+					<input type="text" name="text_letter" id="text_letter" placeholder="Ваше ім'я">
+					<input type="email" name="email_letter" id="email_letter" placeholder="Ваш e-mail">
+					<textarea name="letter_content" id="letter_content" placeholder="Ваше повідомлення"></textarea><br>
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+
+
+	<!-- <iframe src="//mapkit.io/embed/c1YlmI" frameborder="0" height="400" width="600"></iframe> -->
+
+
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10170.194357237948!2d30.5249841943841!3d50.41224982008326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf40c9e03b15%3A0x87952fc60c239b82!2z0LLRg9C70LjRhtGPINCe0YHRgtCw0L_QsCDQktC40YjQvdGWLCA3LCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1486063754356" width="1000" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div> 
+		
+	<div><a class="one_of_us" href="#">будь одним iз нас</a></div>
+
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>

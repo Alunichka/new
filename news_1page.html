@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Описание сайта"/>
+	<meta name="keywords" content="Ключевые слова"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="..."/>
+	<script src="js/jquery.1.7.1.min.js"></script>
+	<script type="text/javascript" scr="js/my.js"></script>
+
+	<!-- LightGallery -->
+	<link type="text/css" rel="stylesheet" href="components/lightGallery/dist/css/lightGallery.css" /> 
+	<script src="components/lightGallery/dist/js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="components/lightGallery/demo/js/lg-thumbnail.min.js"></script>
+    <script src="components/lightGallery/demo/js/lg-fullscreen.min.js"></script>
+        <!-- lightgallery hash plugin -->
+    <script src="components/lightGallery/demo/js/lg-hash.js"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- Facebook comments css -->
+    <link type="text/css" rel="stylesheet" href="components/lightGallery/src/css/lg-fb-comment-box.css" /> 
+
+<title>Програми</title>
+
+<!-- Двухуровневое меню -->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav li').hover(function () {
+        $(this).children('ul').stop(false, true).fadeIn(300);
+        $(this).children('a').addClass('selected');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(300);
+        $(this).children('a').removeClass('selected');
+      });
+    });
+  </script>
+<!-- Двухуровневое меню END-->
+
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+var $commentBox = $('#comment-box');
+ 
+$commentBox.lightGallery({
+    appendSubHtmlTo: '.lg-item',
+    addClass: 'fb-comments',
+    mode: 'lg-fade',
+    download: false,
+    enableDrag: false,
+    enableSwipe: false
+});
+ 
+$commentBox.on('onAfterSlide.lg', function(event, prevIndex, index) {
+    if (!$('.lg-outer .lg-item').eq(index).attr('data-fb')) {
+        try {
+            $('.lg-outer .lg-item').eq(index).attr('data-fb', 'loaded');
+            FB.XFBML.parse();
+        } catch (err) {
+            $(window).on('fbAsyncInit', function() {
+                $('.lg-outer .lg-item').eq(index).attr('data-fb', 'loaded');
+                FB.XFBML.parse();
+            });
+        }
+    }
+});
+	});
+</script>
+
+</head>
+
+<body>
+
+<!-- facebook comment plugin code -->
+<div id="fb-root"></div>
+ 
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- facebook comment plugin code END -->
+
+
+<div id="wrapper"> 
+	<!-- Шапка сайта -->
+	<header id="header" class="center clearfix">
+		<div id="logo" class="left">
+			<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+		</div>
+		<nav id="navigation" class="left">
+			<ul id="nav">
+				<li><a href="index.html">про фонд</a></li>
+				<li><a href="news.html">новини</a>
+					<ul>
+						<li><a href="announcement.html">анонси</a></li>
+						<li><a href="event.html">заходи</a></li>
+					</ul>
+				</li>
+				<li><a href="programms.html">програми</a>
+					<ul>
+						<li><a href="age.html">старість в радість</a></li>
+						<li><a href="family.html">сім'я і дитинство</a></li>
+						<li><a href="ato.html">переселенці та воїни АТО</a></li>
+					</ul>
+				</li>
+				<li><a href="to_help.html">допомогти</a>
+					<ul>
+						<li><a href="donate_online.html">пожертвувати online</a></li>
+						<li><a href="they_need.html">вони потребують допомоги</a></li>
+						<li><a href="requisites.html">реквізити</a></li>
+						<li><a href="volunteer.html">стати волонтером</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">контакти</a></li>
+			</ul>
+		</nav>
+
+		<form action="" id="search_form" class="left">
+			<input id="search" type="text" placeholder="Пошук..."/>
+			<input type="submit" value=""/>
+		</form>
+	</header>
+
+	<!-- Content -->
+	<div id="content" class="center">
+		<div class="main_title">
+			<a class="first_title" href="programms.html"><h4 class="left">новини</h4></a>
+			<h5 class="left">cвято сім'ї і дитинства</h5>
+			<a href="#" class="main_donate right">пожертвувати</a>
+		</div>
+
+		<h1 class="page_title">Cвято сім'ї і дитинства</h1>
+
+		<div class="single_new_text">
+			<p class="content_text">28 травня за підтримки БФ "Сім'я кожному" відбувся святковий захід, присвячений Міжнародному дню сім’ї та Дню захисту дітей – «Свято сім’ї і дитинства». Його метою було підтримати родини переселенців, воїнів АТО та подарувати їм радість весняного спілкування на свіжому повітрі.</p>
+
+			<p class="content_text">На гостей свята чекали пізнавальні майстер-класи та веселі ігри, а також смачне частування, приготовлене на свіжому повітрі. На завершення свята за активну участь у іграх діти отримали цікаві та корисні подаруночки.</p>
+
+			<p class="content_text">Дякуємо нашим партнерам та команді волонтерів за допомогу в організації свята!</p>
+		</div>
+
+		<!-- LightGallery with FB comments -->
+		<div id="comment-box">
+  			<a href="images/news/new_1_gallery_1.jpg" data-sub-html='<div class="fb-comments" data-href="https://alunichka.github.io/new/news_1page.html#lg=1&slide=0" data-width="400" data-numposts="5"></div>'>
+      			<img src="images/news/new_1_gallery_thumb_1.jpg" />
+  			</a>
+  			<a href="images/news/new_1_gallery_2.jpg" data-sub-html='<div class="fb-comments" data-href="https://alunichka.github.io/new/news_1page.html#lg=1&slide=1" data-width="400" data-numposts="5"></div>'>
+      			<img src="images/news/new_1_gallery_thumb_2.jpg" />
+  			</a>
+  			<a href="images/news/new_1_gallery_3.jpg" data-sub-html='<div class="fb-comments" data-href="https://alunichka.github.io/new/news_1page.html#lg=1&slide=2" data-width="400" data-numposts="5"></div>'>
+      			<img src="images/news/new_1_gallery_thumb_3.jpg" />
+  			</a>
+  			<a href="images/news/new_1_gallery_4.jpg" data-sub-html='<div class="fb-comments" data-href="https://alunichka.github.io/new/news_1page.html#lg=1&slide=3" data-width="400" data-numposts="5"></div>'>
+      			<img src="images/news/new_1_gallery_thumb_4.jpg" />
+  			</a>
+  			<a href="images/news/new_1_gallery_5.jpg" data-sub-html='<div class="fb-comments" data-href="https://alunichka.github.io/new/news_1page.html#lg=1&slide=4" data-width="400" data-numposts="5"></div>'>
+      			<img src="images/news/new_1_gallery_thumb_5.jpg" />
+  			</a>
+  			<a href="images/news/new_1_gallery_6.jpg" data-sub-html='<div class="fb-comments" data-href="https://alunichka.github.io/new/news_1page.html#lg=1&slide=5" data-width="400" data-numposts="5"></div>'>
+      			<img src="images/news/new_1_gallery_thumb_6.jpg" />
+  			</a>
+ 
+		</div>
+		
+		<!-- LightGallery with FB comments END-->
+		
+		<div><a class="one_of_us" href="#">будь одним iз нас</a></div>
+	 	
+	</div>
+	<!-- Content END -->
+
+	<footer id="footer" class="center">
+		<p>&copy; <a href="index.html">Благодійний фонд «Сім'я кожному»</a> <a class="author" href="#"> Автор</a></p>  
+	</footer>
+  
+</div>
+</body>
+</html>
